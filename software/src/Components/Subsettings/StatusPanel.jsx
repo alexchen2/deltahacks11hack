@@ -4,8 +4,8 @@ import { wsConnect, doSend } from "../../Network/webSocket";
 
 import {useEffect, useState} from "react";
 
-const handlePanelTap = (index, focus, setFocus, setFocusStyle) => {
-    // doSend("");
+const handlePanelTap = (index, focus, setFocus, setFocusStyle, sendMsg, webSocket) => {
+    doSend(sendMsg, webSocket);
 
     setFocus([
         ...(new Array(Math.max(0, index)).fill(0)), 
@@ -14,7 +14,7 @@ const handlePanelTap = (index, focus, setFocus, setFocusStyle) => {
     ])
 }
 
-const StatusPanel = ({ name, iconPath, index, focus, setFocus }) => {
+const StatusPanel = ({ name, iconPath, index, focus, setFocus, sendMsg, webSocket }) => {
     const [focusStyle, setFocusStyle] = useState("spanel-focus");
     const panelStyle = `spanel-${index + 1}`;
     const iconStyle = `spanel-${index + 1}-dark`;
@@ -30,7 +30,7 @@ const StatusPanel = ({ name, iconPath, index, focus, setFocus }) => {
     return(
         <div 
             className={`spanel-wrapper ${panelStyle} ${focusStyle}`}
-            onClick={() => { handlePanelTap(index, focus, setFocus, setFocusStyle) }}
+            onClick={() => { handlePanelTap(index, focus, setFocus, setFocusStyle, sendMsg, webSocket) }}
         >
             <span className="spanel-text">{ name }</span>
             <div className={`spanel-circle ${iconStyle}`}>

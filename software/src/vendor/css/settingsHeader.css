@@ -34,7 +34,7 @@
 /* CSS stuff */
 
 .sheader-container {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 94px;
     left: 0px;

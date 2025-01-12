@@ -1,24 +1,24 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import { useEffect } from "react";
-import Settings from "./Pages/Settings";
+import { useEffect, useState } from "react";
+import Main from "./Pages/Main";
 // import UploadPage from "./Components/UploadPage";
 // import SignUp from "./Components/SignUp";
 // import Login from "./Components/Login";
 // import Dashboard from "./Components/UserDashboard";
 
-import { url } from "./data/constants";
 import { wsConnect } from "./Network/webSocket";
 
 const App = () => {
+  const [webSocket, setWebSocket] = useState(null);
   // Loads on initial render, opens websocket to hardware server
   useEffect(() => {
-    wsConnect(url);
-  });
+    setWebSocket(wsConnect());
+  }, []);
 
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Settings></Settings>}></Route>
+        <Route path="/" element={<Main webSocket={webSocket}/>}></Route>
         {/* <Route path="/signup" element={<SignUp></SignUp>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/user/dashboard" element={<Dashboard></Dashboard>}></Route> */}

@@ -8,7 +8,7 @@ import StatusPanel from "../Components/Subsettings/StatusPanel";
 import { url, defaultStatus } from "../data/constants";
 
 
-const Settings = () => {
+const Settings = ({webSocket}) => {
     const [statusList, setStatusList] = useState([
         ...defaultStatus
     ]);
@@ -26,6 +26,7 @@ const Settings = () => {
                     {statusList.map((statusInfo, index) => {
                         const status = statusInfo["name"];
                         const path = statusInfo["path"];
+                        const msg = statusInfo["msg"];
 
                         return (
                             <StatusPanel
@@ -35,6 +36,8 @@ const Settings = () => {
                                 index={index}
                                 focus={panelFocus}
                                 setFocus={setPanelFocus}
+                                sendMsg={msg}
+                                webSocket={webSocket}
                             />
                         );
                     })}
