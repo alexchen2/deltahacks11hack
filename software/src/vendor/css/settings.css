@@ -1,0 +1,11 @@
+.status-wrapper {
+    margin-top: 94px;
+    width: 100%;
+    padding-top: 58px;
+}
+
+.status-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

@@ -1,0 +1,90 @@
+/**
+ * ========
+ * Imported Fonts
+ * ========
+**/
+
+/* const [loaded] = useFonts({
+  InterLight: require("../assets/fonts/Inter/Inter-Light.ttf"),
+  SFSemiBold: require("../assets/fonts/San Francisco Pro/SF-Pro-Text-Semibold.otf"),
+  SFRegular: require("../assets/fonts/San Francisco Pro/SF-Pro-Text-Regular.otf"),
+  SFRoundMedium: require("../assets/fonts/San Francisco Pro/SF-Pro-Rounded-Medium.otf"),
+  SFRoundBold: require("../assets/fonts/San Francisco Pro/SF-Pro-Rounded-Bold.otf")
+}); */
+
+/* Inter Light */
+@font-face {
+  font-family: "Inter";
+  font-weight: 300;
+  src: url("vendor/fonts/Inter/Inter-Light.ttf");
+}
+
+/* SF Pro */
+@font-face {
+  font-family: "SF Pro";
+  font-weight: bold;
+  src: url("vendor/fonts/San\ Francisco\ Pro/SF-Pro-Text-Semibold.otf");
+}
+
+@font-face {
+  font-family: "SF Pro";
+  font-weight: normal;
+  src: url("vendor/fonts/San\ Francisco\ Pro/SF-Pro-Text-Regular.otf");
+}
+
+/* SF Pro Rounded */
+@font-face {
+  font-family: "SF Pro Rounded";
+  font-weight: normal;
+  src: url("vendor/fonts/San\ Francisco\ Pro/SF-Pro-Rounded-Medium.otf");
+}
+
+@font-face {
+  font-family: "SF Pro Rounded";
+  font-weight: bold;
+  src: url("vendor/fonts/San\ Francisco\ Pro/SF-Pro-Rounded-Bold.otf");
+}
+
+
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */

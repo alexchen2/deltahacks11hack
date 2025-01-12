@@ -1,0 +1,94 @@
+.spanel-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 292px;
+    height: 68px;
+    padding-left: 22px;
+    padding-right: 22px;
+    border-radius: 5px;
+    border: 1px solid #5C5C5C;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spanel-text {
+    color: #000000;
+    font-family: 'SF Pro Rounded';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.spanel-circle {
+    width: 41px;
+    height: 41px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: middle;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.spanel-img {
+    width: 21px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Panel Colours (alternates between 4-5) */
+
+.spanel-1 {
+    background-color: #FEC56E;
+    filter: drop-shadow(0px 4px 4px rgba(156, 94, 0, 0.2));
+}
+
+.spanel-1-dark {
+    background-color: rgba(255, 172, 47, 0.95);
+}
+
+.spanel-2 {
+    background-color: #C5EBBF;
+    box-shadow: 0px 4px 4px 0px rgba(15, 91, 3, 0.15);
+}
+
+.spanel-2-dark {
+    background-color: #63E04F;
+}
+
+.spanel-3 {
+    background-color: #C8A2FF;
+    box-shadow: 0px 4px 4px 0px rgba(102, 0, 249, 0.20);
+}
+
+.spanel-3-dark {
+    background-color: #AA70FF;
+}
+
+.spanel-4 {
+    background-color: #FE6E90;
+    box-shadow: 0px 4px 4px 0px rgba(134, 0, 32, 0.20);
+}
+
+.spanel-4-dark {
+    background-color: #D73F63;
+}
+
+.spanel-wrapper.spanel-focus.spanel-1 {
+    border: 3px solid rgba(189, 114, 2, 0.95);
+}
+
+.spanel-wrapper.spanel-focus.spanel-2 {
+    border: 3px solid #33b220; 
+}
+
+.spanel-wrapper.spanel-focus.spanel-3 {
+    border: 3px solid #771dff;
+}
+
+.spanel-wrapper.spanel-focus.spanel-4 {
+    border: 3px solid #9f1536;
+}

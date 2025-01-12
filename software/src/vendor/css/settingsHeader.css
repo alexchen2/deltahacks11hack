@@ -1,0 +1,88 @@
+/* Inter Light */
+@font-face {
+    font-family: "Inter";
+    font-weight: 300;
+    src: url("../fonts/Inter/Inter-Light.ttf");
+}
+  
+/* SF Pro */
+@font-face {
+    font-family: "SF Pro";
+    font-weight: 600;
+    src: url("../fonts/SF/SF-Pro-Text-Semibold.otf");
+}
+  
+@font-face {
+    font-family: "SF Pro";
+    font-weight: 400;
+    src: url("../fonts/SF/SF-Pro-Text-Regular.otf");
+}
+  
+/* SF Pro Rounded */
+@font-face {
+    font-family: "SF Pro Rounded";
+    font-weight: 400;
+    src: url("../fonts/SF/SF-Pro-Rounded-Medium.otf");
+}
+  
+@font-face {
+    font-family: "SF Pro Rounded";
+    font-weight: 600;
+    src: url("../fonts/SF/SF-Pro-Rounded-Bold.otf");
+}
+
+/* CSS stuff */
+
+.sheader-container {
+    position: fixed;
+    width: 100%;
+    height: 94px;
+    left: 0px;
+    top: 0px;
+
+    background: #F8F8F8;
+    border-bottom: 0.5px solid #B3B3B3;
+}
+
+.sheader-wrapper {
+    position: absolute;
+    width: 339px;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+    left: 18px;
+    bottom: 37px;
+}
+
+.sheader-back {
+    position: fixed;
+    display: none; /* flex */
+    gap: 6px;    
+}
+
+.sheader-back span {
+    font-family: "SF Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.25px;
+    color: #3C78DF;
+}
+
+.sheader-text {
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 510;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.5px;
+
+    color: #282828;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
