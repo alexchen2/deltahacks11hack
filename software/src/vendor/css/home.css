@@ -1,0 +1,366 @@
+.home-page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+#home-bg-1 {
+    position: absolute;
+    width: 150%;
+    height: 200px;
+    left: -75px;
+    top: 0px;
+    overflow-x: hidden;
+
+    background: #3C78DF;
+    z-index: -10;
+
+}
+
+#home-bg-2 {
+    position: absolute;
+    width: 150%;
+    height: 105px;
+    left: -73px;
+    top: 125px;
+    overflow-x: hidden;
+
+    background: #3C78DF;
+    border-radius: 50%;
+    z-index: -10;
+}
+
+.profile-row {
+    margin-top: 51px;
+    margin-left: 26px;
+    margin-right: 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-left {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 8.5px;
+}
+
+.profile-icon {
+    width: 43px;
+    height: auto;   
+}
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    height: 100%;
+    color: #FFFFFF;
+}
+
+.profile-text-1 {
+    font-family: 'SF Pro Rounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.profile-text-2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.profile-notif {
+    width: 32px;
+    height: 32px;
+
+    background: #FFFFFF;
+    border: 0.5px solid #AFAFAF;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-notif img {
+    width: 24px;
+    height: auto;
+}
+
+/* Main Panels Styling */
+.main-panel-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 10px;
+    padding-left: 26px;
+    padding-right: 26px;
+    margin-top: 36px;
+}
+
+.main-panel-1 {
+    width: 100%;
+    min-height: 164px;
+    height: fit-content;
+
+    background: #C8A2FF;
+    border: 1px solid #5C5C5C;
+    box-shadow: 0px 4px 5px rgba(104, 0, 255, 0.2);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mp1-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.mp1-header, .mp1-subtext {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.mp1-header {
+    gap: 4px;
+}
+
+.mp1-header-1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    letter-spacing: -0.8px;
+
+    color: #282828;
+}
+
+.mp1-header-2 {
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 590;
+    font-size: 33px;
+    line-height: 39px;
+
+    color: #282828;
+}
+
+.mp1-subtext {
+    gap: 3px;
+}
+
+.mp1-subtext-1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: -0.8px;
+
+    color: #4F4F4F;
+}
+
+.mp1-subtext-2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    letter-spacing: -0.8px;
+
+    color: #4F4F4F;
+}
+
+.mp1-illust {
+    max-width: 157px;
+    height: auto;
+    overflow: visible;
+    margin-left: 15px;
+}
+
+.main-panel-2 {
+    width: 100%;
+    min-height: 76px;
+    height: fit-content;
+
+    background: #FEC56E;
+    border: 1px solid #5C5C5C;
+    box-shadow: 0px 4px 5px rgba(152, 93, 0, 0.25);
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+    align-items: center;
+}
+
+.mp2-subheader {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.8px;
+    width: 100%;
+    color: #282828;
+    margin-left: 34px;
+}
+
+.mp2-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.mp2-header {
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 590;
+    font-size: 21px;
+    line-height: 25px;
+    color: #282828;
+}
+
+.mp2-subtext {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: -0.8px;
+
+    color: #282828;
+}
+
+.cycle-wrapper {
+    margin-top: 30px;
+}
+
+.cycle-header {
+    font-family: 'SF Pro Rounded';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: #282828;
+}
+
+.cycle-carousel {
+    margin-top: 20px;
+}
+
+/* Carousel Panels */
+.cpanel-bg {
+    height: 113px;
+    width: 252px;
+    height: 124px;
+
+    border: 1px solid #5C5C5C;
+    border-radius: 15px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cpanel-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 23px;
+}
+
+.cpanel-header {
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 510;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+    color: #FFFFFF;
+}
+
+.cpanel-circle {
+    width: 41px;
+    height: 41px;
+
+    border-radius: 67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cpanel-icon {
+    width: 21px;
+    height: 21px;
+}
+
+.cpanel-subtext {
+    position: absolute;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    letter-spacing: -0.5px;
+    width: fit-content;
+    margin-top: 16px;
+    left: 75px;
+    color: #FFFFFF;
+}
+
+.cpanel-1 {
+    background: #bd4460;
+    box-shadow: 0px 4px 4px rgba(78, 0, 0, 0.25);
+}
+
+.cpanel-1-accent {
+    background: #99374e;
+}
+
+.cpanel-2 {
+    background: #FA980E;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cpanel-2-accent {
+    background: #C17000;    
+}
+
+.cpanel-3 {
+    background: #627EF0;
+    box-shadow: 0px 4px 4px rgba(0, 81, 201, 0.25);
+}
+
+.cpanel-3-accent {
+    background: #6DA0EA;
+}
+
+.cpanel-4 {
+    background: #629EA8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cpanel-4-accent {
+    background: #477a84;
+}
