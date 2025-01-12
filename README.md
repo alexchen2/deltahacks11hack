@@ -1,2 +1,2 @@
-# deltahacks11hack
-(WIP) Our hardware hack for Deltahacks XI.
+# SockTag
+Our hardware hack for DeltaHacks XI. You’ve all heard of putting a sock on your doorknob to let your roommates know you’re busy. But what if you could conveniently display a variety of custom statuses as well. The SockTag is a device that is mounted to the outside of a door, and with a quick connection to its web server using your phone, you can create and set custom statuses such as “Sleeping”, “Away”, “Do not Disturb”, or “Feeling Social”. The SockTag is ideal for students living with several roommates. For example, when John gets home late, he can see at a glance that Terry is sleeping and knows to be quiet. The SockTag also has a future in use for the office with statuses such as “Meeting in Progress” or “Open for drop in”.
